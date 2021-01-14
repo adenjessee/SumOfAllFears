@@ -1,0 +1,65 @@
+
+
+header{
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+
+.hero{
+    margin:0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    max-width: 850px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+table {
+    table-layout:fixed;
+    width: 90%;
+}
+
+td {
+    width: 25%;
+}
+
+table.center{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table.cell-mod{
+    background-color: thistle;
+}
+
+.center{
+    /* position: relative; 
+    left: 30px; */
+    margin: 0 auto;
+    flex:0%;
+    display: table;
+    width: 96%;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="solve.html">Solve</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <header class="jumbotron-fluid">
+        <div class="container hero">
+            <div class="row">
+                <div class="col m-3">
+                    <h1 class="display-3">Sum Of All Fears</h1>
+                    <p class="lead">Welcome to the Solve Page</p>
+                    <hr class="my-2">
+                    <p>Here this page containts an app which calculates of any two numbers in a series, add up to the entered number K.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="" role="button">Github</a>
+                        <a  target="_blank" class="btn btn-primary btn-lg" href="https://adenjessee.netlify.app/" role="button">Portfolio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- The Main App UI -->
+    <main class="containter m-3">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <!-- SLIDER 1 -->
+                <div class="row">
+                    <div class="col-sm-6 m-1 text-center">
+                        <h5>Set The Number of Values</h5>
+                    </div>
+                    <div class="col-sm-5 m-1 text-center">
+                        <div class="slidecontainer">
+                            <input style="width: 180px;" type="range" min="1" max="100" value="50" class="slider" id="quantSlider">
+                            <h5 id="sliderText1"></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDER 2 -->
+                <div class="row">
+                    <div class="col-sm-6 m-1 text-center">
+                        <hr>
+                        <h5>Set The Range of Values</h5>
+                    </div>
+                    <div class="col-sm-5 m-1 text-center">
+                        <div class="slidecontainer">
+                            <hr>
+                            <input style="width: 180px;" type="range" min="1" max="100" value="50" class="slider" id="rangeSlider">
+                            <h5 id="sliderText2"></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDER 3 -->
+                <div class="row">
+                    <div class="col-sm-6 m-1 text-center">
+                        <hr>
+                        <h5>Set The K Value</h5>
+                    </div>
+                    <div class="col-sm-5 m-1 text-center">
+                        <div class="slidecontainer">
+                            <hr>
+                            <input style="width: 180px;" type="range" min="1" max="100" value="50" class="slider" id="kSlider">
+                            <h5 id="sliderText3"></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="row">
+                    <div class="col m-3 text-center">
+                        <hr>
+                        <button id="btnSubmit" class="btn btn-primary ">Generate Random Numbers</button>
+                    </div>
+                </div>
+
+                <!-- RESULTS -->
+                <div class="row">
+                    <div class="col m-3 text-center">
+                        <hr>
+                            <table class=" shadow table-bordered table-striped  text-center center m-3">
+                                <div id="center-table">
+                                    <tbody id="matchesTableOutput">
+                                        
+                                    </tbody>
+                                </div>
+                            </table>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m-3 text-center">
+                        <hr>
+                            <table class="shadow table-bordered table-striped text-center center m-3">
+                                <div id="center-table">
+                                    <tbody id="randomTableOutput">
+                                        
+                                    </tbody>
+                                </div>
+                            </table>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
