@@ -1,7 +1,10 @@
 
+body{
+    background-color: rgb(223, 223, 223);
+}
 
 header{
-    background-image: url("/img/background.jpg");
+    background-image: url("/img/silver.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed;
@@ -69,5 +72,9 @@ table.cell-mod{
 script {
   margin: 20px;
   font: 16px 'Open Sans', sans-serif;
+}
+
+.geometry{
+    max-width: 70%;
 }
 
